@@ -4,8 +4,8 @@ describe "#first_even_number" do
   it "should return the first even number of an array" do
     expect(first_even_number([1, 2, 3, 4, 5])).to eq(2)
   end
-  it "should return an empty array if no even numbers" do
-    expect (first_even_number([1, 7, 3, 5])).to eq([])
+  it "should return nil if no even numbers" do
+    expect(first_even_number([1, 7, 3, 5])).to be_nil
   end
   it "should return the first even number in an array" do
     expect(first_even_number([30, 17, 77, 102])).to eq(30)
